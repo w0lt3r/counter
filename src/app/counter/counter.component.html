@@ -1,0 +1,19 @@
+<div>
+  <button
+    type="button"
+    [ngClass]="'edit-button'"
+    [disabled]="disableIncreaser"
+    (click)="onIncrease()">
+    +
+  </button>
+  <div>
+    {{count}}
+  </div>
+  <button
+    type="button"
+    [ngClass]="'edit-button'"
+    [disabled]="disableDecreaser"
+    (click)="onDecrease()">
+    -
+  </button>
+</div>
